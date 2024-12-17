@@ -1,0 +1,122 @@
+#app {
+  background-color: rgb(196, 196, 196);
+  width: 661px;
+  min-height: 720px; /* Минимальная высота */
+  max-height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex; /* Используем flexbox для растягивания */
+  flex-direction: column; 
+  padding-top: 62px; 
+  padding-bottom: 78px;/* Элементы располагаются вертикально */
+}
+
+.search-line {
+  width: 500px; /* Ширина 100% */
+  box-sizing: border-box;
+  margin: 0 auto;
+  
+}
+
+.search-input {
+  box-sizing: border-box;
+  width: 500px; 
+  height: 61px;
+  border: none;
+  padding-left: 13px;
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.main {
+  width: 500px; /
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.repo-menu {
+  position: relative;
+  top: -15px;
+}
+
+.repo-list {
+  padding: 0;
+}
+
+.repo:hover {
+  background-color: #65CDF9;
+}
+
+.repo {
+  height: 44px;
+  border: 2px solid black;
+  list-style: none;
+  background-color: #E3E3E3;
+}
+
+.repo-name {
+  margin-left: 13px;
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.added-repos {
+  width: 500px; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.added-repo {
+  position: relative;
+  border: 1px solid #000000;
+  background-color: #E27BEB;
+  padding: 10px; /* Внутренние отступы */
+}
+
+small {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 8px 16px 8px 17px;
+}
+
+.remove-button {
+  position: absolute;
+  top: 27px;
+  right: 31.5px;
+  border: none;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(
+    135deg,
+    transparent 45%,
+    rgb(255, 0, 0) 45%,
+    rgb(255, 0, 0) 55%,
+    transparent 55%
+  ),
+  linear-gradient(
+    45deg,
+    transparent 45%,
+    rgb(255, 0, 0) 45%,
+    rgb(255, 0, 0) 55%,
+    transparent 55%
+  );
+  transform: rotate(180deg);
+}
